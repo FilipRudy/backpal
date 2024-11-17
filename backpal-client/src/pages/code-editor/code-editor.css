@@ -1,0 +1,99 @@
+body, .editor-wrapper {
+    overflow-x: hidden;
+    max-width: 100vw;
+    margin: 0;
+}
+
+.editor-wrapper {
+    background-color: #1e1e1e;
+    color: #d4d4d4;
+    min-height: 100vh;
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+}
+
+.text-section {
+    background-color: #2d2d2d;
+    color: #d4d4d4;
+    flex: 1;
+    min-width: 20vw;
+    max-width: 20vw;
+    display: flex;
+    flex-direction: column;    border-radius: 8px;
+    white-space: pre-line;
+
+    gap: 20px;
+}
+
+.section-box {
+    background-color: #3a3a3a;
+    border: 1px solid #444;
+    border-radius: 8px;
+    padding: 20px;
+    flex: 1;
+    overflow-y: auto;
+    max-height: 50%;
+}
+
+.text-section h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.text-section p {
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.code-editor-container {
+    border: 1px solid #444;
+    background-color: #282a36;
+    color: #d4d4d4;
+    font-size: 14px;
+    height: 75vh;
+    width: 77vw;
+    overflow: auto;
+    border-radius: 12px;
+    padding: 10px;
+}
+.output-container {
+    background-color: #2d2d2d;
+    border: 1px solid #444;
+    color: #d4d4d4;
+    border-radius: 12px;
+    height: 40vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 15px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+button {
+    background-color: #007bff;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    .editor-wrapper {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .text-section {
+        max-width: 100%;
+        min-width: 100%;
+    }
+}

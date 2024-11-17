@@ -1,0 +1,80 @@
+.homepage-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.main-content {
+    flex: 1;
+}
+
+.parallax-container {
+    height: 100vh;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.parallax-container::-webkit-scrollbar {
+    display: none;
+}
+
+.centered-content {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.intro-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    text-align: left;
+    gap: 20px;
+}
+
+.how-it-works {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 80px;
+}
+
+.register-section {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.main-graphic {
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    justify-content: flex-end;
+    box-shadow: 16px 16px  0px 3px #ffc75f;
+}
+
+.editor-svg {
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .intro-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero {
+        max-width: 100%;
+    }
+    .main-graphic {
+        display: none;
+    }
+}

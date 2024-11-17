@@ -1,0 +1,70 @@
+.background {
+  margin: auto;
+  min-height: 100vh;
+}
+
+.section-break {
+  min-height: 100px;
+}
+
+.centered-text {
+    text-align: center;  background-color: #5f43b2;
+
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.background-color {
+  background-color: #5f43b2;
+}
+
+.light-green {
+  color: #fcf8ff;
+}
+
+.main-logo {
+  color: #fcf8ff;
+}
+
+.main-logo:hover {
+  color: #000000
+}
+
+.sicilian-orange {
+  color: #ffc75f;
+}
+
+.dirty-white {
+  color: #FFFFFF;
+}
+
+.jetbrains-mono {
+  font-family: "JetBrains Mono", sans-serif;
+}
+
+.clash-font {
+  font-family: ClashBold, cursive;
+}
+
+.clash-medium-font {
+  font-family: ClashMedium, sans-serif;
+}
+
+
+@font-face {
+  font-family: 'ClashBold';
+  src: url('fonts/clash/ClashDisplay-Bold.woff2') format('woff2'),
+  url('fonts/clash/ClashDisplay-Bold.woff') format('woff'),
+  url('fonts/clash/ClashDisplay-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ClashMedium';
+  src: url('fonts/clash/ClashDisplay-Medium.woff2') format('woff2'),
+  url('fonts/clash/ClashDisplay-Medium.woff') format('woff'),
+  url('fonts/clash/ClashDisplay-Medium.ttf') format('truetype');
+}

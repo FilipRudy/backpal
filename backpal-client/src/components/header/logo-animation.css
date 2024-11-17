@@ -1,0 +1,78 @@
+.logo-animation {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    letter-spacing: 4px;
+}
+
+.logo-animation span {
+    display: inline-block;
+    position: relative;
+    font-size: 43px;
+    transition: all 0.3s ease;
+}
+
+.logo-animation:hover span,
+.logo-animation:focus span {
+    animation: slideUp 0.6s forwards, changeColor 0.6s forwards;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.logo-animation:hover span,
+.logo-animation:hover span:nth-child(1),
+.logo-animation:hover span:nth-child(2),
+.logo-animation:hover span:nth-child(3),
+.logo-animation:hover span:nth-child(4),
+.logo-animation:hover span:nth-child(5),
+.logo-animation:hover span:nth-child(6),
+.logo-animation:hover span:nth-child(7),
+.logo-animation:hover span:nth-child(8) {
+    color: #ffc75f;
+}
+
+.logo-animation span:nth-child(1) {
+    animation-delay: 0s;
+}
+.logo-animation span:nth-child(2) {
+    animation-delay: 0.1s;
+}
+.logo-animation span:nth-child(3) {
+    animation-delay: 0.2s;
+}
+.logo-animation span:nth-child(4) {
+    animation-delay: 0.3s;
+}
+.logo-animation span:nth-child(5) {
+    animation-delay: 0.4s;
+}
+.logo-animation span:nth-child(6) {
+    animation-delay: 0.5s;
+}
+.logo-animation span:nth-child(7) {
+    animation-delay: 0.6s;
+}
+.logo-animation span:nth-child(8) {
+    animation-delay: 0.7s;
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(20px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes changeColor {
+    0% {
+        color: inherit;
+    }
+    100% {
+        color: #ffc75f;
+    }
+}

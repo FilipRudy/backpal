@@ -1,0 +1,142 @@
+.journey-browser-container {
+    display: flex;
+    height: 500px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.pick-a-journey-section {
+    text-align: center;
+
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.journey-sidebar {
+    width: 25%;
+    background-color: #f4f4f4;
+    border-right: 1px solid #ccc;
+    border-radius: 10px;
+
+}
+
+.journey-list {
+    list-style: none;
+    padding: 0;    overflow: hidden;
+
+    margin: 0;
+}
+
+.journey-item {
+    padding: 20px;
+    cursor: pointer;
+    border-bottom: 1px solid #ddd;    border-radius: 10px;
+
+    transition: background-color 0.3s ease;
+}
+
+.journey-non-clickable{
+    padding: 20px;
+}
+
+.journey-item.active {
+    background-color: #ffe0b5;
+    font-weight: bold;
+}
+
+.journey-item:hover {
+    background-color: #f9f9f9;
+}
+
+.journey-details {
+    flex: 1;
+    padding: 20px;
+    overflow-y: scroll;
+}
+
+.journey-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.journey-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.journey-details h2 {
+    margin-top: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.journey-details p {
+    font-size: 16px;
+    color: #555;
+}
+@media (min-width: 750px) {
+    .mobile-journey-header {
+        display: none;
+    }
+}
+
+@media (max-width: 750px) {
+    .journey-browser-container {
+        flex-direction: column;
+    }
+
+    .journey-sidebar {
+        width: 100%;
+        height: auto;
+        border-right: none;
+        border-bottom: 1px solid #ccc;
+        overflow: hidden;
+    }
+
+    .mobile-journey-header {
+        padding: 10px;
+        background-color: #f4f4f4;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .expand-arrow {
+        font-size: 1.5rem;
+    }
+
+    .journey-list.hide {
+        display: none;
+    }
+
+    .journey-list.show {
+        display: block;
+    }
+
+    .journey-list {
+        max-height: 300px;
+        overflow-y: auto;
+        border-top: 1px solid #ccc;
+    }
+
+    .journey-item {
+        padding: 10px;
+        text-align: center;
+        border-right: none;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .journey-details {
+        padding: 10px;
+    }
+
+    .journey-image {
+        width: 100%;
+        height: auto;
+    }
+}

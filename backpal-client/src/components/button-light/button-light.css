@@ -1,0 +1,29 @@
+.button-light {
+    color: #3a3153;
+    background-color: #fcf8ff;
+    border: hidden;
+    border-radius: 20px;
+    padding: 10px 30px;
+    font-size: 25px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.button-light:hover {
+    background-color: #000000;
+    color: #F2EFEF;
+    transform: scale(1.05);
+}
+
+.button-light:active {
+    transform: scale(0.95);
+}
+
+@media (max-width: 321px) {
+    .button-light {
+        font-size: 20px !important;
+    }
+}

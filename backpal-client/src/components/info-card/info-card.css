@@ -1,0 +1,58 @@
+.card-container {
+    background-color: #ffc75f;
+    border-radius: 15px;
+    padding: 20px;
+    width: 250px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    font-family: 'JetBrains Mono', monospace;
+    color: #3a3153;
+    margin-bottom: 50px;
+}
+
+.card-content {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.card-number-circle {
+    background-color: #3a3153;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: -60px;
+}
+
+.card-number {
+    font-size: 56px;
+    color: #fcf8ff;
+    font-weight: bold;
+}
+
+@media (max-width: 900px) {
+    .card-container {
+        width: 200px;
+        height: 320px;
+    }
+
+    .card-content {
+        font-size: 15px;
+        line-height: 1.5;
+    }
+
+    .card-number-circle {
+        width: 96px;
+        height: 96px;
+    }
+
+}
+
