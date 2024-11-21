@@ -1,0 +1,29 @@
+{
+  "name": "tes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.mjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.25.8",
+    "@babel/preset-env": "^7.25.8",
+    "@jest/core": "^29.7.0",
+    "aws-sdk": "^2.1691.0",
+    "eslint": "^9.12.0",
+    "eslint-plugin-jest": "^28.8.3",
+    "jest-cli": "^29.7.0",
+    "typeorm": "^0.3.20"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-decorators": "^7.25.7",
+    "@babel/preset-typescript": "^7.25.7",
+    "@types/jest": "^29.5.13",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.2.5"
+  }
+}
