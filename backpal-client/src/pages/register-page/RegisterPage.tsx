@@ -4,7 +4,6 @@ import {useResponsiveFactor} from "../../hooks/useResponsiveFactor";
 import {Parallax, ParallaxLayer} from "@react-spring/parallax";
 import {Header} from "../../components/header/Header";
 import backgroundImage1 from "../homepage/pattern.svg";
-import {LoginCard} from "../../components/login-card/LoginCard";
 import {Footer} from "../../components/footer/Footer";
 import React from "react";
 
